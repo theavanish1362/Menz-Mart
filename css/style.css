@@ -4,7 +4,17 @@
 * Author URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */
-
+.custom-navbar
+{
+  position:sticky;
+  top: 0;
+  z-index: 4;
+}
+.next,.prev
+{
+  opacity: 0.1;
+  z-index: 0;
+}
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 .navbar-brand,.footer-logo{
   font-family: "Satisfy", cursive;
