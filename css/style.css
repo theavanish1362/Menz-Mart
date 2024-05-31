@@ -498,6 +498,8 @@ a {
     z-index: 1;
     right: 0; }
     .footer-section .sofa-img img {
+      border: 1px solid black ; 
+      border-radius: 50%;
       max-width: 380px; }
   .footer-section .links-wrap {
     margin-top: 0px; }
