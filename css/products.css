@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.product-price
+{
+    font-size:26px;
+}
+.add-to-cart button,.buy-now button
+{
+    background-color: #0c0808;
+    color: antiquewhite;
+    height: 3.2rem;
+    width: 12.6rem;
+    font-weight: 800;
+    font-size: medium;
+}
+.buttons
+{
+    display: flex;
+    width: 75%;
+    justify-content:space-evenly;
+}
+.checked {
+ritik
+    color: orange;
+=======
+    color:orange;
+ main
+}
