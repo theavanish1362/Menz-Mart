@@ -1,10 +1,4 @@
-<!-- /*
-* Bootstrap 5
-* Template Name: Furni
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,36 +15,15 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/products.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>The menz mart</title>
-		<style>
-			.product-item #skin,.product-item #hair,.product-item #perfume,.product-item #beard,.product-item #shave,.product-item #face,.product-item #lip,.product-item #body
-			{
-				height: 250.04px;
-				width: 200px;
-				border: 1px solid black;
-				border-radius: 20px;
-			}
-			.footer-img
-			{
-				position: absolute;
-    			top: -200px;
-    			z-index: 1;
-    			right: 0;
-				max-width: 380px;
-			}
-			.footer-img img
-			{
-				border: 1px solid black;
-				border-radius: 50%;
-			}
-		</style>
 	</head>
 
 	<body>
 
 		<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-
 			<div class="container">
 				<a class="navbar-brand" href="index.html">The menz mart<span> .</span></a>
 
@@ -82,97 +55,73 @@
 		
 
 		
-		
+        <!--Product start-->
 		<div class="untree_co-section product-section before-footer-section">
 		    <div class="container">
 		      	<div class="row">
-
-		      		<!-- Start Column 1 -->
-					  <div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="Hair-care.html">
-							<img id="hair" width="200px" height="300px" src="https://www.justformen.com/sites/g/files/sgirzt191/files/styles/webp/public/2022-05/4_SIC_product_application_mobile_5.jpg.webp?itok=46XwacWC" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Hair Care</h3>
-						</a>
-					</div>  
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a  class="product-item" href="#">
-							<img id="skin" src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_image/media_image/500/000/files/man-applying-sunscreen-article.jpg?h=baa64af7&itok=EEeV4BKL" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Skin Care</h3>
-
-						</a>
-					</div> 
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="bodycare.html">
-							<img id="body" src="https://www.harrys.com/harrys-cdnx-prod/assets/images/gallery_images/attachments/3fda077b05ac7bbc49eb40e03fb25ff11753b6bd.jpg" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Body & Bath Care</h3>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="perfumes-product.html">
-							<img id="perfume" width="200px" height="300px" src="https://img.freepik.com/premium-photo/smile-happy-man-spray-deodorant-hygiene-fresh-scent-body-care-after-shower-blue-studio-background-perfume-product-male-model-from-india-spraying-armpit-prevent-smell-odor_590464-95668.jpg" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Perfumes</h3>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-
-					<!-- Start Column 1 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="Beard-care.html">
-							<img id="beard" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaX4BgSHGh7Grge1kgkTATPqiq9Vz0AMlU8A&s" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Beard Care</h3>
-						</a>
-					</div> 
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="ShaveCare.html">
-							<img id="shave" src="https://hajamat.in/cdn/shop/articles/DSC08879_1600x.jpg?v=1587386119" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Shave Care</h3>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="Face-care.html">
-							<img id="face" src="https://cardonskin.com/cdn/shop/articles/cardon-blog-best-products-oily-skin-men-routine-1x1.png?v=1694467517&width=960" class="img-fluid product-thumbnail" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Face Care</h3>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-6 mb-6">
 						<a class="product-item" href="#">
-							<img id="lip" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDRIvn0EC6vDURk_Fp7X7Plqjeig6iNdmnhmTzrb2koTxVS3OpgD_OM2gT4bwGmtcaqM&usqp=CAU" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Lip Care</h3>
-						</a>
-					</div>
-					<!-- End Column 4 -->
+							<img width="100%" src="https://www.lakmeindia.com/cdn/shop/files/27887_H-8901030997235_1000x.jpg?v=1709898514"></a>
+                        </div>
+                     <div class="col-12 col-md-6 col-lg-6 mb-5">
+							<h2 class="product-title"><B>LAKMĒ DEW DRAMA FACEWASH </B></h2>
+                            <br>
+                            <!-- <h4>Awaken your senses and embrace the day with the captivating scent of our Men  </h4> -->
+                            <p>Get ready to steal the spotlight with Dew Drama collection, featuring a cleanser, moisturizer and serum to complete your daily skincare regime! Watch this creamy cleanser transform into foam and gently wash away dirt, dust, impurities and even makeup. </p>
+							<div class="row">
+                                
+                            <div class="col-12 col-md-4 col-lg-4 mb-6">
+                               <center> <span >
+                                    <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/655f5e2f9938fa171bf6d535/61s3kecspjl-_sl1000_-140x140.jpg" height="82px" width="68px" >
+                                    <br>
+                                    <p>Cleanse</p>
+                                </span></center>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 mb-6">
+                               <center> <span >
+                                    <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/655f5e2fc78065197eff611b/61kdcsqkdkl-_sl1000_-140x140.jpg" width=82px height="68px" >
+                                    <br>
+                                    <p>Moisture</p>
+                                </span></center>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 mb-6">
+                                <center><span >
+                                    <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/655f5e2fd4b4730460e71bd0/61f3y6cx4ml-_sl1000_-140x140.jpg" width=82px height="68px" >
+                                    <br>
+                                    <p>Brighten skin</p>
+                                </span></center>
+                            </div>
+                        </div>
+                        <h2>Ratings</h2>
+                        <span class="fa fa-star checked" style="size: 100em;"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span>  4.0</span><br><br>
 
+                        <strong class="product-price"> MRP ₹249.00
+
+                        </strong><br><br>
+                        <div class="buttons">
+                        <span class="add-to-cart"><button type="submit">Add to Cart</button></span>
+                        <span class="buy-now"><button type="submit">Buy Now</button></span>
+                        </div>
+                    </div>
+                        </div>
+                       
 		      	</div>
+                <br>
+                <br>
+                
+                    
+                
 		    </div>
 		</div>
-
+        <!--Product end-->
 
 		<!-- Start Footer Section -->
 		<footer class="footer-section">
 			<div class="container relative">
-
-				<div class="footer-img">
-					<img src="https://brickellmensproducts.com/cdn/shop/articles/top_5_products_blog.jpg?v=1705688511" alt="Image" class="img-fluid">
-				</div>
 
 				<div class="row">
 					<div class="col-lg-8">
@@ -245,7 +194,7 @@
 				<div class="border-top copyright">
 					<div class="row pt-4">
 						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.   <!-- License information: https://untree.co/license/ -->
             </p>
 						</div>
 
@@ -262,6 +211,8 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
+
+
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>

@@ -1,57 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="favicon.png">
-    <title>The menz mart</title>
-    <link rel="stylesheet" href="./css/loginstyle.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-  <form>
-  
-  
-  <div class="container">
-      <div class="login-box">
-        <h2>CREATE AN ACCOUNT</h2>
-  
-  <div class="user-box">
-            <input type="text" name="" required="" />
-            <label>First name</label>
-          </div>
-  
- <div class="user-box">
-            <input type="password" name="" id="password" required="" />
-            <label>Last name</label>
-           
-          </div>
-     <div class="user-box">
-     <input type="gamil" name="" required="" />
-     <label>Gmail</label></div>
-     <div class="user-box">
-      <input type="Password" name="" required="" />
-      <label>Password</label>
-    </div>
-    <div class="user-box">
-      <input type="Password" name="" required="" />
-      <label>Confirm Password</label>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Signup</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eff2f1;
+            background-image: url('https://t4.ftcdn.net/jpg/01/92/12/05/360_F_192120588_fk5XCWsYn2Fz5fWxZ8f5wYRFfq1J7Erd.jpg');
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        /* #signup {
+            position: relative;
+            top: -50px;
+        } */
+        .login-box
+        {
+            height: 650px;
+        }
+        .button {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #c6e2e3;
+    color: #151515;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+    text-decoration: none;
+    
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    justify-content: center; 
+    text-align: center;
+    width: 50%;
+    display: grid;
+    margin-left: 25%;
+  }
+        .button input{
+            border: none;
+            background-color: #c6e2e3;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        #name_error
+        {
+            z-index: 4;
+            background-color: #151515;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box" id="form">
+            <h2>Signup</h2>
+
+            <div class="user-box">
+                <label>Full Name</label>
+                <input type="text" id="name" name="" required="" />
+                <span style="color: red;" id="name_error"></span>
+            </div>
+            <div class="user-box">
+                <input type="text" id="username" name="" required="" />
+                <label>Username</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="" id="password" required="" />
+                <label>Password</label>
+                <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" id="email" required="" />
+                <label>Email</label>
+                
+            </div>
+            <div class="button" id="signup">
+                <button type="submit" value="Signup" id="signUp">Submit</button>
+             <!-- <input type="submit" value="Signup" id="signUp" > -->
+            </div>
+
+        </div>
     </div>
 
+    <script src="./js/login.js"></script>
+    <script src="https://kit.fontawesome.com/bfe96cd705.js" crossorigin="anonymous"></script>
+    <script>
+        
+        const name= document.getElementById('name');
+        const email= document.getElementById('email');
+        const username= document.getElementById('username');
+        const password= document.getElementById('password');
+        const form= document.getElementById('form');
+        const name_error= document.getElementById('name_error');
 
-  
-    <div class="button" id="login">
-      <a href="index.html">CREATE</a></div>
-      <br>
-      <div class="signup">Already have an account? <a href="login.html">LOGIN</a>
-      </div>
-      <br>
-   
-    </div>
-   </div>
-  </form>
-  
-  <script src="https://kit.fontawesome.com/bfe96cd705.js" crossorigin="anonymous"></script>
-  </body>
+        form.addEventListener('submit',(e)=>{
+            if(name.value==='' || name.value==null)
+            {
+                alert('hii');
+                e.preventDefault();
+                name_error.innerHTML="Name is required";
+            }
+        })
+    </script>
+</body>
+
 </html>
