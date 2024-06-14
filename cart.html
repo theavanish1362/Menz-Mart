@@ -16,6 +16,33 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>The menz mart</title>
+
+		<script>
+			function minus()
+			{
+				var count=Number(document.getElementById('number').value);
+				var t=Number(document.getElementById('price').innerHTML);
+                 if(count>1)
+				 {
+					count--;
+					document.getElementById('number').value=count;
+					var tt=parseFloat(count*t);
+					document.getElementById('total').innerHTML=tt;
+				 }
+			}
+			function plus()
+			{
+				var count=Number(document.getElementById('number').value);
+				var t=Number(document.getElementById('price').innerHTML);
+                 if(count>=1)
+				 {
+					count++;
+					document.getElementById('number').value=count;
+					var tt=parseFloat(count*t);
+					document.getElementById('total').innerHTML=tt;
+				 }
+			}
+		</script>
 	</head>
 
 	<body>
@@ -89,36 +116,37 @@
                       <tbody>
                         <tr>
                           <td class="product-thumbnail">
-                            <img src="images/product-1.png" alt="Image" class="img-fluid">
+                            <img src="https://www.themancompany.com/cdn/shop/files/Anti-AcneFaceWash6_ccb303cb-19f0-43d5-ac13-9c29aa84052b_765x.jpg?v=1687326685" 
+                            class="img-fluid product-thumbnail" alt="Image" class="img-fluid">
                           </td>
                           <td class="product-name">
-                            <h2 class="h5 text-black">Product 1</h2>
+                            <h2 class="h5 text-black">Anti-Acne Face Wash</h2>
                           </td>
-                          <td>$49.00</td>
+                          <td>₹<span id="price">250.00</span></td>
                           <td>
                             <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
                               <div class="input-group-prepend">
-                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
+                                <button class="btn btn-outline-black decrease" type="button" onclick="minus()">&minus;</button>
                               </div>
-                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="number">
                               <div class="input-group-append">
-                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
+                                <button class="btn btn-outline-black increase" type="button" onclick="plus()">&plus;</button>
                               </div>
                             </div>
         
                           </td>
-                          <td>$49.00</td>
+                          <td>₹<span id="total">250</span></td>
                           <td><a href="#" class="btn btn-black btn-sm">X</a></td>
                         </tr>
         
                         <tr>
                           <td class="product-thumbnail">
-                            <img src="images/product-2.png" alt="Image" class="img-fluid">
+                            <img src="https://m.media-amazon.com/images/I/61LL68H0ymL._SX522_.jpg" alt="Image" class="img-fluid">
                           </td>
                           <td class="product-name">
-                            <h2 class="h5 text-black">Product 2</h2>
+                            <h2 class="h5 text-black">Villain Perfume</h2>
                           </td>
-                          <td>$49.00</td>
+                          <td>₹879.00</td>
                           <td>
                             <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
                               <div class="input-group-prepend">
@@ -131,7 +159,7 @@
                             </div>
         
                           </td>
-                          <td>$49.00</td>
+                          <td>₹879</td>
                           <td><a href="#" class="btn btn-black btn-sm">X</a></td>
                         </tr>
                       </tbody>
@@ -147,7 +175,7 @@
                       <button class="btn btn-black btn-sm btn-block">Update Cart</button>
                     </div>
                     <div class="col-md-6">
-                      <button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
+						<a href="mixed-page.html"><button class="btn btn-outline-black btn-sm btn-block"> Continue Shopping</button></a>
                     </div>
                   </div>
                   <div class="row">
@@ -176,7 +204,7 @@
                           <span class="text-black">Subtotal</span>
                         </div>
                         <div class="col-md-6 text-right">
-                          <strong class="text-black">$230.00</strong>
+                          <strong class="text-black">₹230.00</strong>
                         </div>
                       </div>
                       <div class="row mb-5">
@@ -184,7 +212,7 @@
                           <span class="text-black">Total</span>
                         </div>
                         <div class="col-md-6 text-right">
-                          <strong class="text-black">$230.00</strong>
+                          <strong class="text-black">₹230.00</strong>
                         </div>
                       </div>
         

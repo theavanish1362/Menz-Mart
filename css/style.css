@@ -4,6 +4,9 @@
 * Author URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */
+.about-pname{
+  text-align: center;
+}
 .custom-navbar
 {
   position:sticky;
@@ -486,7 +489,7 @@ a {
         background-color: #3b5d50; }
 
 .before-footer-section {
-  padding: 7rem 0 12rem 0 !important; }
+  padding: 2rem 0 12rem 0 !important; }
 
 .blog-section {
   padding: 5rem 0 5rem 0; }
